@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DecodeLabs - Interactive Web Elements (Project 3)</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="app-container">
+    <header class="app-header">
+        <h1>DecodeLabs Dashboard</h1>
+        <!-- Dark Mode Toggle Button -->
+        <button id="themeToggleBtn" class="theme-btn">🌙 Dark Mode</button>
+    </header>
+
+    <main class="app-main">
+        <!-- Interactive Counter Section -->
+        <section class="card">
+            <h2>Interactive Counter</h2>
+            <p class="subtitle">Demonstrating State Management & Input-Process-Output Loop</p>
+
+            <div class="counter-display">
+                <span>Score: </span>
+                <span id="scoreDisplay">0</span>
+            </div>
+
+            <div class="button-group">
+                <button id="decrementBtn" class="btn btn-danger">- Decrease</button>
+                <button id="resetBtn" class="btn btn-secondary">Reset</button>
+                <button id="incrementBtn" class="btn btn-primary">+ Increase</button>
+            </div>
+        </section>
+
+        <!-- Dynamic Item List Section -->
+        <section class="card">
+            <h2>Dynamic Content Generator</h2>
+            <p class="subtitle">Demonstrating Safe Node Creation & DOM Mutation</p>
+
+            <div class="input-group">
+                <input type="text" id="itemInput" placeholder="Enter a new skill or task..." />
+                <button id="addItemBtn" class="btn btn-success">Add Item</button>
+            </div>
+
+            <ul id="itemList" class="item-list"></ul>
+        </section>
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
